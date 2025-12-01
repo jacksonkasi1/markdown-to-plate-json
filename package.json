@@ -1,0 +1,30 @@
+{
+  "name": "plate-editor",
+  "version": "1.0.0",
+  "description": "Convert Markdown to Plate JSON format",
+  "module": "index.ts",
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "convert": "bun run converter.ts",
+    "test": "bun run converter.ts test.md output.json",
+    "dev": "bun run --watch converter.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@platejs/markdown": "^52.0.4",
+    "@udecode/plate-common": "^42.0.0",
+    "@udecode/plate-core": "^49.0.0",
+    "remark": "^15.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-parse": "^11.0.0",
+    "slate": "^0.118.1",
+    "slate-hyperscript": "^0.100.0",
+    "unified": "^11.0.5"
+  }
+}
