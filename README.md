@@ -1,15 +1,18 @@
-# Markdown to Plate JSON Converter
+# Markdown ↔ Plate JSON Converter
 
-A server-side Node.js/Bun utility to convert Markdown files into Plate editor compatible JSON format. This tool uses the official `@platejs/markdown` plugin with GitHub Flavored Markdown (GFM) support.
+A server-side Node.js/Bun utility for **bidirectional conversion** between Markdown and Plate editor JSON format. This tool uses the official `@platejs/markdown` plugin with GitHub Flavored Markdown (GFM) support.
 
 ## Features
 
+- **Bidirectional conversion**: Markdown ↔ Plate JSON
 - Convert complex Markdown to Plate JSON format
+- Convert Plate JSON back to Markdown
 - Support for GitHub Flavored Markdown (tables, task lists, strikethrough, etc.)
 - Handle all standard Markdown elements (headers, lists, code blocks, links, images, etc.)
 - Server-side conversion (no React dependencies required)
 - Fast conversion powered by Bun runtime
-- Command-line interface for easy file conversion
+- Command-line interface with auto-detection of conversion direction
+- TypeScript support with full type safety
 
 ## Installation
 
@@ -21,7 +24,7 @@ bun install
 
 ## Usage
 
-### Basic Conversion
+### Markdown to JSON
 
 Convert a markdown file to Plate JSON:
 
@@ -31,30 +34,50 @@ bun run test
 
 This will convert `test.md` to `output.json`.
 
-### Custom Input/Output
+### JSON to Markdown (Reverse)
 
-Specify custom input and output files:
+Convert Plate JSON back to markdown:
 
 ```bash
-bun run converter.ts <input.md> <output.json>
+bun run test:reverse
 ```
 
-Example:
+This will convert `output.json` to `output.md`.
+
+### Custom Input/Output
+
+The converter auto-detects the conversion direction based on file extension:
 
 ```bash
-bun run converter.ts my-document.md my-document.json
+# Markdown → JSON
+bun run converter.ts input.md output.json
+
+# JSON → Markdown
+bun run converter.ts input.json output.md
 ```
 
 ### Programmatic Usage
 
 You can also use the converter in your own code:
 
+**Markdown to JSON:**
 ```typescript
 import { convertMarkdownToPlateJSON } from './converter'
 
 const markdownContent = '# Hello World\n\nThis is **bold** text.'
 const plateJSON = await convertMarkdownToPlateJSON(markdownContent)
 console.log(plateJSON)
+```
+
+**JSON to Markdown:**
+```typescript
+import { convertPlateJSONToMarkdown } from './converter'
+
+const plateJSON = [
+  { type: 'h1', children: [{ text: 'Hello World' }] }
+]
+const markdown = convertPlateJSONToMarkdown(plateJSON)
+console.log(markdown) // # Hello World
 ```
 
 ## Supported Markdown Features
@@ -116,9 +139,13 @@ plate-editor/
 
 ## Scripts
 
-- `bun run test` - Convert test.md to output.json
-- `bun run convert` - Run the converter with default or custom args
+- `bun run test` - Convert test.md to output.json (Markdown → JSON)
+- `bun run test:reverse` - Convert output.json to output.md (JSON → Markdown)
+- `bun run convert` - Run the converter with custom args
 - `bun run dev` - Run converter in watch mode
+- `bun run lint` - Check code with Biome linter
+- `bun run lint:fix` - Fix linting issues automatically
+- `bun run type-check` - Run TypeScript type checking
 
 ## Development
 
