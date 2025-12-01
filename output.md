@@ -44,11 +44,11 @@ Here are different text formatting options:
 
 ### Task List (GitHub Flavored Markdown)
 
-- Completed task
-- Pending task
-- Another pending task
-  - Nested completed task
-  - Nested pending task
+- [x] Completed task
+- [ ] Pending task
+- [ ] Another pending task
+  - [x] Nested completed task
+  - [ ] Nested pending task
 
 ## Code Blocks
 
@@ -110,13 +110,13 @@ const user: User = {
 ### Alignment Example
 
 | Left Aligned | Center Aligned | Right Aligned |
-| --- | --- | --- |
+| --- | :---: | ---: |
 | Left | Center | Right |
 | Text | More text | Numbers: 123 |
 
 ## Images
 
-![](https://via.placeholder.com/150)
+![Placeholder Image](https://via.placeholder.com/150)
 
 ## Horizontal Rules
 
@@ -148,7 +148,7 @@ Here are some special characters: & < > " '
 
 ## Escaped Characters
 
-*Not italic* [Not a link]
+\*Not italic\* \[Not a link\]
 
 ## Long Paragraph
 
@@ -158,13 +158,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 
 1. First level ordered list
   - Unordered nested item
-  - Another item with **bold** and *italic*```javascript
-// Nested code block
-const nested = true;
-```
+  - Another item with **bold** and *italic*
+  ```javascript
+  // Nested code block
+  const nested = true;
+  ```
   - Back to list
-2. Second level> Nested blockquote
-> with multiple lines
+2. Second level
+   > Nested blockquote
+   > with multiple lines
 3. Third level
 
 ## Conclusion

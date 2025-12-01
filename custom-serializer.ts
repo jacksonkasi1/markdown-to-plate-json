@@ -5,6 +5,7 @@ import type { Descendant, Element, Text } from "slate";
  * Custom markdown serializer that handles all Plate elements including lists
  */
 export function serializeToMarkdown(nodes: Descendant[]): string {
+	// Use double newline to separate root blocks, restoring standard markdown spacing
 	return nodes.map((node) => serializeNode(node)).join("\n\n");
 }
 
@@ -19,6 +20,8 @@ function serializeNode(node: Descendant, listDepth = 0): string {
 		lang?: string;
 		ordered?: boolean;
 		checked?: boolean;
+		align?: string[];
+		caption?: { text: string }[];
 	};
 
 	const children = element.children || [];
@@ -86,7 +89,9 @@ function serializeNode(node: Descendant, listDepth = 0): string {
 		}
 
 		case "img": {
-			const alt = serializeChildren(children);
+			// Try to get alt text from caption, or children
+			const captionText = element.caption?.[0]?.text;
+			const alt = captionText || serializeChildren(children);
 			const url = element.url || "";
 			return `![${alt}](${url})`;
 		}
@@ -105,40 +110,54 @@ function serializeListItem(
 	depth: number,
 	index?: number,
 ): string {
+	// Using 2 spaces for list indentation
 	const indent = "  ".repeat(depth);
 	const marker = ordered ? `${index}.` : "-";
+    const baseIndent = "  ".repeat(depth);
 
 	const children = node.children || [];
 
 	// Handle task lists
+	let prefix = "";
 	if ("checked" in node && typeof node.checked === "boolean") {
-		const checkbox = node.checked ? "[x]" : "[ ]";
-		return `${indent}${marker} ${checkbox} ${serializeChildren(children)}`;
+		prefix = node.checked ? "[x] " : "[ ] ";
 	}
 
-	// Handle nested lists
+	// Handle nested lists and mixed content
 	let content = "";
 	const nestedLists: string[] = [];
 
-	for (const child of children) {
+	for (let i = 0; i < children.length; i++) {
+		const child = children[i] as Element;
+        
 		if (
 			"type" in child &&
 			(child.type === "ul" ||
-				child.type === "ol" ||
-				child.type === "li" ||
-				child.type === "lic")
+				child.type === "ol")
 		) {
-			if (child.type === "ul" || child.type === "ol") {
-				nestedLists.push(serializeNode(child, depth + 1));
-			} else {
-				content += serializeNode(child, depth);
-			}
+			nestedLists.push(serializeNode(child, depth + 1));
 		} else {
-			content += serializeNode(child, depth);
+            // Handle block elements inside list item (like code blocks)
+            const isBlock = "type" in child && (child.type === "code_block" || child.type === "blockquote");
+            let childContent = serializeNode(child, depth);
+            
+            if (isBlock) {
+                // Indent block content
+                const offset = ordered ? 3 : 2; // Approximate
+                const blockIndent = " ".repeat(offset);
+                
+                const lines = childContent.split('\n');
+                childContent = "\n" + lines.map(line => blockIndent + line).join("\n");
+            }
+            
+            content += childContent;
 		}
 	}
 
-	let result = `${indent}${marker} ${content}`;
+    // Ensure space after marker if content is text
+    // If content starts with newline (block), it's fine.
+	let result = `${baseIndent}${marker} ${prefix}${content}`;
+    
 	if (nestedLists.length > 0) {
 		result += "\n" + nestedLists.join("\n");
 	}
@@ -149,6 +168,8 @@ function serializeListItem(
 function serializeTable(element: Element): string {
 	const rows = element.children as Element[];
 	if (!rows || rows.length === 0) return "";
+    
+    const alignments = (element as any).align as string[] || [];
 
 	const lines: string[] = [];
 
@@ -162,7 +183,12 @@ function serializeTable(element: Element): string {
 
 		// Add separator after header row
 		if (i === 0) {
-			const separator = cells.map(() => "---").join(" | ");
+			const separator = cells.map((_, index) => {
+                const align = alignments[index];
+                if (align === 'center') return ':---:';
+                if (align === 'right') return '---:';
+                return '---'; // Default or left
+            }).join(" | ");
 			lines.push(`| ${separator} |`);
 		}
 	}
@@ -176,6 +202,13 @@ function serializeChildren(children: Descendant[]): string {
 
 function serializeText(node: Text): string {
 	let text = node.text;
+
+	// Escape special characters if not part of a mark
+	if (!node.bold && !node.italic && !node.code) {
+        // Escape * and _ and [ and ]
+        // Careful not to break existing things, but here we are conservative
+        text = text.replace(/([*_\[\]])/g, '\\$1');
+    }
 
 	// Handle marks
 	if ("bold" in node && node.bold) {
