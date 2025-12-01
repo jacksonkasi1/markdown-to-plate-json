@@ -3,7 +3,14 @@ import type { Descendant } from "slate";
 
 // ** import core packages
 import { createSlateEditor } from "@udecode/plate-core";
-import { deserializeMd, MarkdownPlugin, serializeMd } from "@platejs/markdown";
+import { BaseListPlugin } from "@platejs/list";
+import {
+	buildRules,
+	defaultRules,
+	deserializeMd,
+	MarkdownPlugin,
+	serializeMd,
+} from "@platejs/markdown";
 import remarkGfm from "remark-gfm";
 
 // ** import utils
@@ -15,9 +22,9 @@ import { readFile, writeFile } from "node:fs/promises";
 export async function convertMarkdownToPlateJSON(
 	markdownContent: string,
 ): Promise<Descendant[]> {
-	// Create a Plate editor with MarkdownPlugin
+	// Create a Plate editor with ListPlugin and MarkdownPlugin
 	const editor = createSlateEditor({
-		plugins: [MarkdownPlugin],
+		plugins: [BaseListPlugin, MarkdownPlugin],
 	});
 
 	// Deserialize markdown to Plate JSON
@@ -33,19 +40,22 @@ export async function convertMarkdownToPlateJSON(
  * Converts Plate JSON to Markdown format
  */
 export function convertPlateJSONToMarkdown(plateJSON: Descendant[]): string {
-	// Create a Plate editor with MarkdownPlugin
+	// Create a Plate editor with ListPlugin and MarkdownPlugin
 	const editor = createSlateEditor({
-		plugins: [MarkdownPlugin],
+		plugins: [BaseListPlugin, MarkdownPlugin],
 	});
 
-	// Set the editor value
-	// biome-ignore lint/suspicious/noExplicitAny: Type compatibility issue with Descendant[] assignment
-	editor.children = plateJSON as any;
+	// Build rules for the editor (includes list serialization rules)
+	// biome-ignore lint/suspicious/noExplicitAny: Type compatibility issue with editor type
+	const rules = buildRules(editor as any);
 
-	// Serialize Plate JSON to Markdown
+	// Serialize Plate JSON to Markdown with rules and value
 	// biome-ignore lint/suspicious/noExplicitAny: Type compatibility issue between plate-core and platejs/markdown
 	const markdown = serializeMd(editor as any, {
 		remarkPlugins: [remarkGfm],
+		rules: { ...defaultRules, ...rules },
+		// biome-ignore lint/suspicious/noExplicitAny: Type compatibility with plateJSON
+		value: plateJSON as any,
 	});
 
 	return markdown;

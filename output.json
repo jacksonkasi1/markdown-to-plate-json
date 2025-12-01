@@ -1,1658 +1,1501 @@
 [
-  {
-    "children": [
-      {
-        "text": "Comprehensive Markdown Test Document"
-      }
-    ],
-    "type": "h1"
-  },
-  {
-    "children": [
-      {
-        "text": "This is a "
-      },
-      {
-        "bold": true,
-        "text": "complex markdown document"
-      },
-      {
-        "text": " to test the Plate editor conversion capabilities. It includes "
-      },
-      {
-        "italic": true,
-        "text": "various"
-      },
-      {
-        "text": " markdown features and "
-      },
-      {
-        "strikethrough": true,
-        "text": "some strikethrough text"
-      },
-      {
-        "text": "."
-      }
-    ],
-    "type": "p"
-  },
-  {
-    "children": [
-      {
-        "text": "Text Formatting"
-      }
-    ],
-    "type": "h2"
-  },
-  {
-    "children": [
-      {
-        "text": "Here are different text formatting options:"
-      }
-    ],
-    "type": "p"
-  },
-  {
-    "children": [
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "bold": true,
-                "text": "Bold text"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "italic": true,
-                "text": "Italic text"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "italic": true,
-                "bold": true,
-                "text": "Bold and italic"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "strikethrough": true,
-                "text": "Strikethrough"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "code": true,
-                "text": "inline code"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "Link to Google"
-                  }
-                ],
-                "type": "a",
-                "url": "https://google.com"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      }
-    ],
-    "type": "ul"
-  },
-  {
-    "children": [
-      {
-        "text": "Headers"
-      }
-    ],
-    "type": "h2"
-  },
-  {
-    "children": [
-      {
-        "text": "Level 3 Header"
-      }
-    ],
-    "type": "h3"
-  },
-  {
-    "children": [
-      {
-        "text": "Level 4 Header"
-      }
-    ],
-    "type": "h4"
-  },
-  {
-    "children": [
-      {
-        "text": "Level 5 Header"
-      }
-    ],
-    "type": "h5"
-  },
-  {
-    "children": [
-      {
-        "text": "Level 6 Header"
-      }
-    ],
-    "type": "h6"
-  },
-  {
-    "children": [
-      {
-        "text": "Lists"
-      }
-    ],
-    "type": "h2"
-  },
-  {
-    "children": [
-      {
-        "text": "Unordered List"
-      }
-    ],
-    "type": "h3"
-  },
-  {
-    "children": [
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "First item"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "Second item"
-              }
-            ],
-            "type": "lic"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "children": [
-                      {
-                        "text": "Nested item 1"
-                      }
-                    ],
-                    "type": "lic"
-                  }
-                ],
-                "type": "li"
-              },
-              {
-                "children": [
-                  {
-                    "children": [
-                      {
-                        "text": "Nested item 2"
-                      }
-                    ],
-                    "type": "lic"
-                  },
-                  {
-                    "children": [
-                      {
-                        "children": [
-                          {
-                            "children": [
-                              {
-                                "text": "Deep nested item"
-                              }
-                            ],
-                            "type": "lic"
-                          }
-                        ],
-                        "type": "li"
-                      }
-                    ],
-                    "type": "ul"
-                  }
-                ],
-                "type": "li"
-              }
-            ],
-            "type": "ul"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "Third item"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      }
-    ],
-    "type": "ul"
-  },
-  {
-    "children": [
-      {
-        "text": "Ordered List"
-      }
-    ],
-    "type": "h3"
-  },
-  {
-    "children": [
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "First step"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "Second step"
-              }
-            ],
-            "type": "lic"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "children": [
-                      {
-                        "text": "Sub-step A"
-                      }
-                    ],
-                    "type": "lic"
-                  }
-                ],
-                "type": "li"
-              },
-              {
-                "children": [
-                  {
-                    "children": [
-                      {
-                        "text": "Sub-step B"
-                      }
-                    ],
-                    "type": "lic"
-                  }
-                ],
-                "type": "li"
-              }
-            ],
-            "type": "ol"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "Third step"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      }
-    ],
-    "type": "ol"
-  },
-  {
-    "children": [
-      {
-        "text": "Task List (GitHub Flavored Markdown)"
-      }
-    ],
-    "type": "h3"
-  },
-  {
-    "children": [
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "Completed task"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "Pending task"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "Another pending task"
-              }
-            ],
-            "type": "lic"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "children": [
-                      {
-                        "text": "Nested completed task"
-                      }
-                    ],
-                    "type": "lic"
-                  }
-                ],
-                "type": "li"
-              },
-              {
-                "children": [
-                  {
-                    "children": [
-                      {
-                        "text": "Nested pending task"
-                      }
-                    ],
-                    "type": "lic"
-                  }
-                ],
-                "type": "li"
-              }
-            ],
-            "type": "ul"
-          }
-        ],
-        "type": "li"
-      }
-    ],
-    "type": "ul"
-  },
-  {
-    "children": [
-      {
-        "text": "Code Blocks"
-      }
-    ],
-    "type": "h2"
-  },
-  {
-    "children": [
-      {
-        "text": "JavaScript Code"
-      }
-    ],
-    "type": "h3"
-  },
-  {
-    "children": [
-      {
-        "children": [
-          {
-            "text": "function helloWorld() {"
-          }
-        ],
-        "type": "code_line"
-      },
-      {
-        "children": [
-          {
-            "text": "  console.log(\"Hello, World!\");"
-          }
-        ],
-        "type": "code_line"
-      },
-      {
-        "children": [
-          {
-            "text": "  return true;"
-          }
-        ],
-        "type": "code_line"
-      },
-      {
-        "children": [
-          {
-            "text": "}"
-          }
-        ],
-        "type": "code_line"
-      },
-      {
-        "children": [
-          {
-            "text": ""
-          }
-        ],
-        "type": "code_line"
-      },
-      {
-        "children": [
-          {
-            "text": "const result = helloWorld();"
-          }
-        ],
-        "type": "code_line"
-      }
-    ],
-    "lang": "javascript",
-    "type": "code_block"
-  },
-  {
-    "children": [
-      {
-        "text": "TypeScript Code"
-      }
-    ],
-    "type": "h3"
-  },
-  {
-    "children": [
-      {
-        "children": [
-          {
-            "text": "interface User {"
-          }
-        ],
-        "type": "code_line"
-      },
-      {
-        "children": [
-          {
-            "text": "  id: number;"
-          }
-        ],
-        "type": "code_line"
-      },
-      {
-        "children": [
-          {
-            "text": "  name: string;"
-          }
-        ],
-        "type": "code_line"
-      },
-      {
-        "children": [
-          {
-            "text": "  email: string;"
-          }
-        ],
-        "type": "code_line"
-      },
-      {
-        "children": [
-          {
-            "text": "}"
-          }
-        ],
-        "type": "code_line"
-      },
-      {
-        "children": [
-          {
-            "text": ""
-          }
-        ],
-        "type": "code_line"
-      },
-      {
-        "children": [
-          {
-            "text": "const user: User = {"
-          }
-        ],
-        "type": "code_line"
-      },
-      {
-        "children": [
-          {
-            "text": "  id: 1,"
-          }
-        ],
-        "type": "code_line"
-      },
-      {
-        "children": [
-          {
-            "text": "  name: \"John Doe\","
-          }
-        ],
-        "type": "code_line"
-      },
-      {
-        "children": [
-          {
-            "text": "  email: \"john@example.com\""
-          }
-        ],
-        "type": "code_line"
-      },
-      {
-        "children": [
-          {
-            "text": "};"
-          }
-        ],
-        "type": "code_line"
-      }
-    ],
-    "lang": "typescript",
-    "type": "code_block"
-  },
-  {
-    "children": [
-      {
-        "text": "JSON Example"
-      }
-    ],
-    "type": "h3"
-  },
-  {
-    "children": [
-      {
-        "children": [
-          {
-            "text": "{"
-          }
-        ],
-        "type": "code_line"
-      },
-      {
-        "children": [
-          {
-            "text": "  \"name\": \"plate-editor\","
-          }
-        ],
-        "type": "code_line"
-      },
-      {
-        "children": [
-          {
-            "text": "  \"version\": \"1.0.0\","
-          }
-        ],
-        "type": "code_line"
-      },
-      {
-        "children": [
-          {
-            "text": "  \"description\": \"Markdown to Plate JSON converter\""
-          }
-        ],
-        "type": "code_line"
-      },
-      {
-        "children": [
-          {
-            "text": "}"
-          }
-        ],
-        "type": "code_line"
-      }
-    ],
-    "lang": "json",
-    "type": "code_block"
-  },
-  {
-    "children": [
-      {
-        "text": "Blockquotes"
-      }
-    ],
-    "type": "h2"
-  },
-  {
-    "children": [
-      {
-        "text": "This is a blockquote.\nIt can span multiple lines."
-      },
-      {
-        "text": "\n"
-      },
-      {
-        "text": "\n"
-      },
-      {
-        "children": [
-          {
-            "text": "This is a nested blockquote.\nPretty cool, right?"
-          }
-        ],
-        "type": "p"
-      }
-    ],
-    "type": "blockquote"
-  },
-  {
-    "children": [
-      {
-        "text": "Tables (GitHub Flavored Markdown)"
-      }
-    ],
-    "type": "h2"
-  },
-  {
-    "children": [
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "Feature"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "th"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "Supported"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "th"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "Notes"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "th"
-          }
-        ],
-        "type": "tr"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "Headers"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "td"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "✓"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "td"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "H1-H6 supported"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "td"
-          }
-        ],
-        "type": "tr"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "Lists"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "td"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "✓"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "td"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "Ordered and unordered"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "td"
-          }
-        ],
-        "type": "tr"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "Code"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "td"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "✓"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "td"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "Inline and blocks"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "td"
-          }
-        ],
-        "type": "tr"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "Tables"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "td"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "✓"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "td"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "GFM extension"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "td"
-          }
-        ],
-        "type": "tr"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "Images"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "td"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "✓"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "td"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "Alt text supported"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "td"
-          }
-        ],
-        "type": "tr"
-      }
-    ],
-    "type": "table"
-  },
-  {
-    "children": [
-      {
-        "text": "Alignment Example"
-      }
-    ],
-    "type": "h3"
-  },
-  {
-    "children": [
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "Left Aligned"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "th"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "Center Aligned"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "th"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "Right Aligned"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "th"
-          }
-        ],
-        "type": "tr"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "Left"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "td"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "Center"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "td"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "Right"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "td"
-          }
-        ],
-        "type": "tr"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "Text"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "td"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "More text"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "td"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "text": "Numbers: 123"
-                  }
-                ],
-                "type": "p"
-              }
-            ],
-            "type": "td"
-          }
-        ],
-        "type": "tr"
-      }
-    ],
-    "type": "table"
-  },
-  {
-    "children": [
-      {
-        "text": "Images"
-      }
-    ],
-    "type": "h2"
-  },
-  {
-    "caption": [
-      {
-        "text": "Placeholder Image"
-      }
-    ],
-    "children": [
-      {
-        "text": ""
-      }
-    ],
-    "type": "img",
-    "url": "https://via.placeholder.com/150"
-  },
-  {
-    "children": [
-      {
-        "text": "Horizontal Rules"
-      }
-    ],
-    "type": "h2"
-  },
-  {
-    "children": [
-      {
-        "text": ""
-      }
-    ],
-    "type": "hr"
-  },
-  {
-    "children": [
-      {
-        "text": "Above and below are horizontal rules."
-      }
-    ],
-    "type": "p"
-  },
-  {
-    "children": [
-      {
-        "text": ""
-      }
-    ],
-    "type": "hr"
-  },
-  {
-    "children": [
-      {
-        "text": ""
-      }
-    ],
-    "type": "hr"
-  },
-  {
-    "children": [
-      {
-        "text": "Links and References"
-      }
-    ],
-    "type": "h2"
-  },
-  {
-    "children": [
-      {
-        "text": "Here's a "
-      },
-      {
-        "text": " and an "
-      },
-      {
-        "children": [
-          {
-            "text": "inline link"
-          }
-        ],
-        "type": "a",
-        "url": "https://example.com"
-      },
-      {
-        "text": "."
-      }
-    ],
-    "type": "p"
-  },
-  {
-    "children": [
-      {
-        "text": "Mixed Content"
-      }
-    ],
-    "type": "h2"
-  },
-  {
-    "children": [
-      {
-        "text": "You can combine "
-      },
-      {
-        "bold": true,
-        "text": "bold text with "
-      },
-      {
-        "children": [
-          {
-            "bold": true,
-            "text": "links"
-          }
-        ],
-        "type": "a",
-        "url": "https://example.com"
-      },
-      {
-        "text": " and "
-      },
-      {
-        "code": true,
-        "text": "inline code"
-      },
-      {
-        "text": " in the same sentence."
-      }
-    ],
-    "type": "p"
-  },
-  {
-    "children": [
-      {
-        "text": "Inline HTML (if supported)"
-      }
-    ],
-    "type": "h3"
-  },
-  {
-    "children": [
-      {
-        "text": "<div>\n  <p>Some HTML content</p>\n</div>"
-      }
-    ],
-    "type": "p"
-  },
-  {
-    "children": [
-      {
-        "text": "Special Characters"
-      }
-    ],
-    "type": "h2"
-  },
-  {
-    "children": [
-      {
-        "text": "Here are some special characters: & < > \" '"
-      }
-    ],
-    "type": "p"
-  },
-  {
-    "children": [
-      {
-        "text": "Escaped Characters"
-      }
-    ],
-    "type": "h2"
-  },
-  {
-    "children": [
-      {
-        "text": "*Not italic* [Not a link]"
-      }
-    ],
-    "type": "p"
-  },
-  {
-    "children": [
-      {
-        "text": "Long Paragraph"
-      }
-    ],
-    "type": "h2"
-  },
-  {
-    "children": [
-      {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      }
-    ],
-    "type": "p"
-  },
-  {
-    "children": [
-      {
-        "text": "Nested Complex Structures"
-      }
-    ],
-    "type": "h2"
-  },
-  {
-    "children": [
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "First level ordered list"
-              }
-            ],
-            "type": "lic"
-          },
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "children": [
-                      {
-                        "text": "Unordered nested item"
-                      }
-                    ],
-                    "type": "lic"
-                  }
-                ],
-                "type": "li"
-              },
-              {
-                "children": [
-                  {
-                    "children": [
-                      {
-                        "text": "Another item with "
-                      },
-                      {
-                        "bold": true,
-                        "text": "bold"
-                      },
-                      {
-                        "text": " and "
-                      },
-                      {
-                        "italic": true,
-                        "text": "italic"
-                      }
-                    ],
-                    "type": "lic"
-                  },
-                  {
-                    "children": [
-                      {
-                        "children": [
-                          {
-                            "text": "// Nested code block"
-                          }
-                        ],
-                        "type": "code_line"
-                      },
-                      {
-                        "children": [
-                          {
-                            "text": "const nested = true;"
-                          }
-                        ],
-                        "type": "code_line"
-                      }
-                    ],
-                    "lang": "javascript",
-                    "type": "code_block"
-                  }
-                ],
-                "type": "li"
-              },
-              {
-                "children": [
-                  {
-                    "children": [
-                      {
-                        "text": "Back to list"
-                      }
-                    ],
-                    "type": "lic"
-                  }
-                ],
-                "type": "li"
-              }
-            ],
-            "type": "ul"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "Second level"
-              }
-            ],
-            "type": "lic"
-          },
-          {
-            "children": [
-              {
-                "text": "Nested blockquote\nwith multiple lines"
-              }
-            ],
-            "type": "blockquote"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "Third level"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      }
-    ],
-    "type": "ol"
-  },
-  {
-    "children": [
-      {
-        "text": "Conclusion"
-      }
-    ],
-    "type": "h2"
-  },
-  {
-    "children": [
-      {
-        "text": "This document tests various markdown features to ensure proper conversion to Plate JSON format. It includes:"
-      }
-    ],
-    "type": "p"
-  },
-  {
-    "children": [
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "Text formatting (bold, italic, strikethrough)"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "Headers at all levels"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "Multiple list types"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "Code blocks with syntax highlighting"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "Blockquotes (including nested)"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "Tables with different alignments"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "Images"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "Links (inline and reference)"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "Horizontal rules"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "Mixed content"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      },
-      {
-        "children": [
-          {
-            "children": [
-              {
-                "text": "Special characters"
-              }
-            ],
-            "type": "lic"
-          }
-        ],
-        "type": "li"
-      }
-    ],
-    "type": "ul"
-  },
-  {
-    "children": [
-      {
-        "text": ""
-      }
-    ],
-    "type": "hr"
-  },
-  {
-    "children": [
-      {
-        "bold": true,
-        "text": "End of Test Document"
-      }
-    ],
-    "type": "p"
-  }
+	{
+		"children": [
+			{
+				"text": "Comprehensive Markdown Test Document"
+			}
+		],
+		"type": "h1"
+	},
+	{
+		"children": [
+			{
+				"text": "This is a "
+			},
+			{
+				"bold": true,
+				"text": "complex markdown document"
+			},
+			{
+				"text": " to test the Plate editor conversion capabilities. It includes "
+			},
+			{
+				"italic": true,
+				"text": "various"
+			},
+			{
+				"text": " markdown features and "
+			},
+			{
+				"strikethrough": true,
+				"text": "some strikethrough text"
+			},
+			{
+				"text": "."
+			}
+		],
+		"type": "p"
+	},
+	{
+		"children": [
+			{
+				"text": "Text Formatting"
+			}
+		],
+		"type": "h2"
+	},
+	{
+		"children": [
+			{
+				"text": "Here are different text formatting options:"
+			}
+		],
+		"type": "p"
+	},
+	{
+		"children": [
+			{
+				"bold": true,
+				"text": "Bold text"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"italic": true,
+				"text": "Italic text"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"italic": true,
+				"bold": true,
+				"text": "Bold and italic"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"strikethrough": true,
+				"text": "Strikethrough"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"code": true,
+				"text": "inline code"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"children": [
+					{
+						"text": "Link to Google"
+					}
+				],
+				"type": "a",
+				"url": "https://google.com"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"text": "Headers"
+			}
+		],
+		"type": "h2"
+	},
+	{
+		"children": [
+			{
+				"text": "Level 3 Header"
+			}
+		],
+		"type": "h3"
+	},
+	{
+		"children": [
+			{
+				"text": "Level 4 Header"
+			}
+		],
+		"type": "h4"
+	},
+	{
+		"children": [
+			{
+				"text": "Level 5 Header"
+			}
+		],
+		"type": "h5"
+	},
+	{
+		"children": [
+			{
+				"text": "Level 6 Header"
+			}
+		],
+		"type": "h6"
+	},
+	{
+		"children": [
+			{
+				"text": "Lists"
+			}
+		],
+		"type": "h2"
+	},
+	{
+		"children": [
+			{
+				"text": "Unordered List"
+			}
+		],
+		"type": "h3"
+	},
+	{
+		"children": [
+			{
+				"text": "First item"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"text": "Second item"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"text": "Nested item 1"
+			}
+		],
+		"type": "p",
+		"indent": 2,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"text": "Nested item 2"
+			}
+		],
+		"type": "p",
+		"indent": 2,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"text": "Deep nested item"
+			}
+		],
+		"type": "p",
+		"indent": 3,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"text": "Third item"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"text": "Ordered List"
+			}
+		],
+		"type": "h3"
+	},
+	{
+		"children": [
+			{
+				"text": "First step"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "decimal",
+		"listStart": 1
+	},
+	{
+		"children": [
+			{
+				"text": "Second step"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "decimal",
+		"listStart": 2
+	},
+	{
+		"children": [
+			{
+				"text": "Sub-step A"
+			}
+		],
+		"type": "p",
+		"indent": 2,
+		"listStyleType": "decimal",
+		"listStart": 1
+	},
+	{
+		"children": [
+			{
+				"text": "Sub-step B"
+			}
+		],
+		"type": "p",
+		"indent": 2,
+		"listStyleType": "decimal",
+		"listStart": 2
+	},
+	{
+		"children": [
+			{
+				"text": "Third step"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "decimal",
+		"listStart": 3
+	},
+	{
+		"children": [
+			{
+				"text": "Task List (GitHub Flavored Markdown)"
+			}
+		],
+		"type": "h3"
+	},
+	{
+		"children": [
+			{
+				"text": "Completed task"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "todo",
+		"checked": true
+	},
+	{
+		"children": [
+			{
+				"text": "Pending task"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "todo",
+		"checked": false
+	},
+	{
+		"children": [
+			{
+				"text": "Another pending task"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "todo",
+		"checked": false
+	},
+	{
+		"children": [
+			{
+				"text": "Nested completed task"
+			}
+		],
+		"type": "p",
+		"indent": 2,
+		"listStyleType": "todo",
+		"checked": true
+	},
+	{
+		"children": [
+			{
+				"text": "Nested pending task"
+			}
+		],
+		"type": "p",
+		"indent": 2,
+		"listStyleType": "todo",
+		"checked": false
+	},
+	{
+		"children": [
+			{
+				"text": "Code Blocks"
+			}
+		],
+		"type": "h2"
+	},
+	{
+		"children": [
+			{
+				"text": "JavaScript Code"
+			}
+		],
+		"type": "h3"
+	},
+	{
+		"children": [
+			{
+				"children": [
+					{
+						"text": "function helloWorld() {"
+					}
+				],
+				"type": "code_line"
+			},
+			{
+				"children": [
+					{
+						"text": "  console.log(\"Hello, World!\");"
+					}
+				],
+				"type": "code_line"
+			},
+			{
+				"children": [
+					{
+						"text": "  return true;"
+					}
+				],
+				"type": "code_line"
+			},
+			{
+				"children": [
+					{
+						"text": "}"
+					}
+				],
+				"type": "code_line"
+			},
+			{
+				"children": [
+					{
+						"text": ""
+					}
+				],
+				"type": "code_line"
+			},
+			{
+				"children": [
+					{
+						"text": "const result = helloWorld();"
+					}
+				],
+				"type": "code_line"
+			}
+		],
+		"lang": "javascript",
+		"type": "code_block"
+	},
+	{
+		"children": [
+			{
+				"text": "TypeScript Code"
+			}
+		],
+		"type": "h3"
+	},
+	{
+		"children": [
+			{
+				"children": [
+					{
+						"text": "interface User {"
+					}
+				],
+				"type": "code_line"
+			},
+			{
+				"children": [
+					{
+						"text": "  id: number;"
+					}
+				],
+				"type": "code_line"
+			},
+			{
+				"children": [
+					{
+						"text": "  name: string;"
+					}
+				],
+				"type": "code_line"
+			},
+			{
+				"children": [
+					{
+						"text": "  email: string;"
+					}
+				],
+				"type": "code_line"
+			},
+			{
+				"children": [
+					{
+						"text": "}"
+					}
+				],
+				"type": "code_line"
+			},
+			{
+				"children": [
+					{
+						"text": ""
+					}
+				],
+				"type": "code_line"
+			},
+			{
+				"children": [
+					{
+						"text": "const user: User = {"
+					}
+				],
+				"type": "code_line"
+			},
+			{
+				"children": [
+					{
+						"text": "  id: 1,"
+					}
+				],
+				"type": "code_line"
+			},
+			{
+				"children": [
+					{
+						"text": "  name: \"John Doe\","
+					}
+				],
+				"type": "code_line"
+			},
+			{
+				"children": [
+					{
+						"text": "  email: \"john@example.com\""
+					}
+				],
+				"type": "code_line"
+			},
+			{
+				"children": [
+					{
+						"text": "};"
+					}
+				],
+				"type": "code_line"
+			}
+		],
+		"lang": "typescript",
+		"type": "code_block"
+	},
+	{
+		"children": [
+			{
+				"text": "JSON Example"
+			}
+		],
+		"type": "h3"
+	},
+	{
+		"children": [
+			{
+				"children": [
+					{
+						"text": "{"
+					}
+				],
+				"type": "code_line"
+			},
+			{
+				"children": [
+					{
+						"text": "  \"name\": \"plate-editor\","
+					}
+				],
+				"type": "code_line"
+			},
+			{
+				"children": [
+					{
+						"text": "  \"version\": \"1.0.0\","
+					}
+				],
+				"type": "code_line"
+			},
+			{
+				"children": [
+					{
+						"text": "  \"description\": \"Markdown to Plate JSON converter\""
+					}
+				],
+				"type": "code_line"
+			},
+			{
+				"children": [
+					{
+						"text": "}"
+					}
+				],
+				"type": "code_line"
+			}
+		],
+		"lang": "json",
+		"type": "code_block"
+	},
+	{
+		"children": [
+			{
+				"text": "Blockquotes"
+			}
+		],
+		"type": "h2"
+	},
+	{
+		"children": [
+			{
+				"text": "This is a blockquote.\nIt can span multiple lines."
+			},
+			{
+				"text": "\n"
+			},
+			{
+				"text": "\n"
+			},
+			{
+				"children": [
+					{
+						"text": "This is a nested blockquote.\nPretty cool, right?"
+					}
+				],
+				"type": "p"
+			}
+		],
+		"type": "blockquote"
+	},
+	{
+		"children": [
+			{
+				"text": "Tables (GitHub Flavored Markdown)"
+			}
+		],
+		"type": "h2"
+	},
+	{
+		"children": [
+			{
+				"children": [
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "Feature"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "th"
+					},
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "Supported"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "th"
+					},
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "Notes"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "th"
+					}
+				],
+				"type": "tr"
+			},
+			{
+				"children": [
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "Headers"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "td"
+					},
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "✓"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "td"
+					},
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "H1-H6 supported"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "td"
+					}
+				],
+				"type": "tr"
+			},
+			{
+				"children": [
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "Lists"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "td"
+					},
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "✓"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "td"
+					},
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "Ordered and unordered"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "td"
+					}
+				],
+				"type": "tr"
+			},
+			{
+				"children": [
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "Code"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "td"
+					},
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "✓"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "td"
+					},
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "Inline and blocks"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "td"
+					}
+				],
+				"type": "tr"
+			},
+			{
+				"children": [
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "Tables"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "td"
+					},
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "✓"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "td"
+					},
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "GFM extension"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "td"
+					}
+				],
+				"type": "tr"
+			},
+			{
+				"children": [
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "Images"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "td"
+					},
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "✓"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "td"
+					},
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "Alt text supported"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "td"
+					}
+				],
+				"type": "tr"
+			}
+		],
+		"type": "table"
+	},
+	{
+		"children": [
+			{
+				"text": "Alignment Example"
+			}
+		],
+		"type": "h3"
+	},
+	{
+		"children": [
+			{
+				"children": [
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "Left Aligned"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "th"
+					},
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "Center Aligned"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "th"
+					},
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "Right Aligned"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "th"
+					}
+				],
+				"type": "tr"
+			},
+			{
+				"children": [
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "Left"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "td"
+					},
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "Center"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "td"
+					},
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "Right"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "td"
+					}
+				],
+				"type": "tr"
+			},
+			{
+				"children": [
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "Text"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "td"
+					},
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "More text"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "td"
+					},
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "Numbers: 123"
+									}
+								],
+								"type": "p"
+							}
+						],
+						"type": "td"
+					}
+				],
+				"type": "tr"
+			}
+		],
+		"type": "table"
+	},
+	{
+		"children": [
+			{
+				"text": "Images"
+			}
+		],
+		"type": "h2"
+	},
+	{
+		"caption": [
+			{
+				"text": "Placeholder Image"
+			}
+		],
+		"children": [
+			{
+				"text": ""
+			}
+		],
+		"type": "img",
+		"url": "https://via.placeholder.com/150"
+	},
+	{
+		"children": [
+			{
+				"text": "Horizontal Rules"
+			}
+		],
+		"type": "h2"
+	},
+	{
+		"children": [
+			{
+				"text": ""
+			}
+		],
+		"type": "hr"
+	},
+	{
+		"children": [
+			{
+				"text": "Above and below are horizontal rules."
+			}
+		],
+		"type": "p"
+	},
+	{
+		"children": [
+			{
+				"text": ""
+			}
+		],
+		"type": "hr"
+	},
+	{
+		"children": [
+			{
+				"text": ""
+			}
+		],
+		"type": "hr"
+	},
+	{
+		"children": [
+			{
+				"text": "Links and References"
+			}
+		],
+		"type": "h2"
+	},
+	{
+		"children": [
+			{
+				"text": "Here's a "
+			},
+			{
+				"text": " and an "
+			},
+			{
+				"children": [
+					{
+						"text": "inline link"
+					}
+				],
+				"type": "a",
+				"url": "https://example.com"
+			},
+			{
+				"text": "."
+			}
+		],
+		"type": "p"
+	},
+	{
+		"children": [
+			{
+				"text": "Mixed Content"
+			}
+		],
+		"type": "h2"
+	},
+	{
+		"children": [
+			{
+				"text": "You can combine "
+			},
+			{
+				"bold": true,
+				"text": "bold text with "
+			},
+			{
+				"children": [
+					{
+						"bold": true,
+						"text": "links"
+					}
+				],
+				"type": "a",
+				"url": "https://example.com"
+			},
+			{
+				"text": " and "
+			},
+			{
+				"code": true,
+				"text": "inline code"
+			},
+			{
+				"text": " in the same sentence."
+			}
+		],
+		"type": "p"
+	},
+	{
+		"children": [
+			{
+				"text": "Inline HTML (if supported)"
+			}
+		],
+		"type": "h3"
+	},
+	{
+		"children": [
+			{
+				"text": "<div>\n  <p>Some HTML content</p>\n</div>"
+			}
+		],
+		"type": "p"
+	},
+	{
+		"children": [
+			{
+				"text": "Special Characters"
+			}
+		],
+		"type": "h2"
+	},
+	{
+		"children": [
+			{
+				"text": "Here are some special characters: & < > \" '"
+			}
+		],
+		"type": "p"
+	},
+	{
+		"children": [
+			{
+				"text": "Escaped Characters"
+			}
+		],
+		"type": "h2"
+	},
+	{
+		"children": [
+			{
+				"text": "*Not italic* [Not a link]"
+			}
+		],
+		"type": "p"
+	},
+	{
+		"children": [
+			{
+				"text": "Long Paragraph"
+			}
+		],
+		"type": "h2"
+	},
+	{
+		"children": [
+			{
+				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			}
+		],
+		"type": "p"
+	},
+	{
+		"children": [
+			{
+				"text": "Nested Complex Structures"
+			}
+		],
+		"type": "h2"
+	},
+	{
+		"children": [
+			{
+				"text": "First level ordered list"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "decimal",
+		"listStart": 1
+	},
+	{
+		"children": [
+			{
+				"text": "Unordered nested item"
+			}
+		],
+		"type": "p",
+		"indent": 2,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"text": "Another item with "
+			},
+			{
+				"bold": true,
+				"text": "bold"
+			},
+			{
+				"text": " and "
+			},
+			{
+				"italic": true,
+				"text": "italic"
+			}
+		],
+		"type": "p",
+		"indent": 2,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"children": [
+					{
+						"text": "// Nested code block"
+					}
+				],
+				"type": "code_line"
+			},
+			{
+				"children": [
+					{
+						"text": "const nested = true;"
+					}
+				],
+				"type": "code_line"
+			}
+		],
+		"lang": "javascript",
+		"type": "code_block",
+		"indent": 3
+	},
+	{
+		"children": [
+			{
+				"text": "Back to list"
+			}
+		],
+		"type": "p",
+		"indent": 2,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"text": "Second level"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "decimal",
+		"listStart": 2
+	},
+	{
+		"children": [
+			{
+				"text": "Nested blockquote\nwith multiple lines"
+			}
+		],
+		"type": "blockquote",
+		"indent": 2
+	},
+	{
+		"children": [
+			{
+				"text": "Third level"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "decimal",
+		"listStart": 3
+	},
+	{
+		"children": [
+			{
+				"text": "Conclusion"
+			}
+		],
+		"type": "h2"
+	},
+	{
+		"children": [
+			{
+				"text": "This document tests various markdown features to ensure proper conversion to Plate JSON format. It includes:"
+			}
+		],
+		"type": "p"
+	},
+	{
+		"children": [
+			{
+				"text": "Text formatting (bold, italic, strikethrough)"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"text": "Headers at all levels"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"text": "Multiple list types"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"text": "Code blocks with syntax highlighting"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"text": "Blockquotes (including nested)"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"text": "Tables with different alignments"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"text": "Images"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"text": "Links (inline and reference)"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"text": "Horizontal rules"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"text": "Mixed content"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"text": "Special characters"
+			}
+		],
+		"type": "p",
+		"indent": 1,
+		"listStyleType": "disc"
+	},
+	{
+		"children": [
+			{
+				"text": ""
+			}
+		],
+		"type": "hr"
+	},
+	{
+		"children": [
+			{
+				"bold": true,
+				"text": "End of Test Document"
+			}
+		],
+		"type": "p"
+	}
 ]

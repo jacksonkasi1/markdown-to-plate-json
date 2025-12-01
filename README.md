@@ -4,15 +4,29 @@ A server-side Node.js/Bun utility for **bidirectional conversion** between Markd
 
 ## Features
 
-- **Bidirectional conversion**: Markdown ↔ Plate JSON
-- Convert complex Markdown to Plate JSON format
-- Convert Plate JSON back to Markdown
+- **Markdown → Plate JSON**: Full conversion support for all Markdown elements
+- **Plate JSON → Markdown**: Partial conversion with known limitations (see below)
 - Support for GitHub Flavored Markdown (tables, task lists, strikethrough, etc.)
 - Handle all standard Markdown elements (headers, lists, code blocks, links, images, etc.)
 - Server-side conversion (no React dependencies required)
 - Fast conversion powered by Bun runtime
 - Command-line interface with auto-detection of conversion direction
 - TypeScript support with full type safety
+
+## ⚠️ Known Limitations
+
+**JSON to Markdown conversion** currently has limitations with the Plate markdown serializer:
+
+- **Lists** (ordered and unordered) are not serialized back to markdown
+- **Task lists** may not serialize properly
+- **Some nested structures** may lose formatting
+
+**Recommendation**: For production use, the **Markdown → JSON conversion works perfectly**. The JSON format preserves all structure and can be used directly in Plate editors. The reverse conversion (JSON → Markdown) is provided as a convenience but may not preserve all elements.
+
+If you need full bidirectional conversion, consider:
+1. Using the Plate JSON format as your source of truth
+2. Implementing a custom serializer for specific use cases
+3. Contributing to the Plate project to improve markdown serialization
 
 ## Installation
 

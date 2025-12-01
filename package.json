@@ -22,6 +22,7 @@
 		"typescript": "^5"
 	},
 	"dependencies": {
+		"@platejs/list": "^52.0.1",
 		"@platejs/markdown": "^52.0.4",
 		"@udecode/plate-common": "^42.0.0",
 		"@udecode/plate-core": "^49.0.0",
