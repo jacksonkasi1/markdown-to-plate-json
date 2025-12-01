@@ -111,9 +111,9 @@ function serializeListItem(
 	index?: number,
 ): string {
 	// Using 2 spaces for list indentation
-	const indent = "  ".repeat(depth);
+	const _indent = "  ".repeat(depth);
 	const marker = ordered ? `${index}.` : "-";
-    const baseIndent = "  ".repeat(depth);
+	const baseIndent = "  ".repeat(depth);
 
 	const children = node.children || [];
 
@@ -129,37 +129,35 @@ function serializeListItem(
 
 	for (let i = 0; i < children.length; i++) {
 		const child = children[i] as Element;
-        
-		if (
-			"type" in child &&
-			(child.type === "ul" ||
-				child.type === "ol")
-		) {
+
+		if ("type" in child && (child.type === "ul" || child.type === "ol")) {
 			nestedLists.push(serializeNode(child, depth + 1));
 		} else {
-            // Handle block elements inside list item (like code blocks)
-            const isBlock = "type" in child && (child.type === "code_block" || child.type === "blockquote");
-            let childContent = serializeNode(child, depth);
-            
-            if (isBlock) {
-                // Indent block content
-                const offset = ordered ? 3 : 2; // Approximate
-                const blockIndent = " ".repeat(offset);
-                
-                const lines = childContent.split('\n');
-                childContent = "\n" + lines.map(line => blockIndent + line).join("\n");
-            }
-            
-            content += childContent;
+			// Handle block elements inside list item (like code blocks)
+			const isBlock =
+				"type" in child &&
+				(child.type === "code_block" || child.type === "blockquote");
+			let childContent = serializeNode(child, depth);
+
+			if (isBlock) {
+				// Indent block content
+				const offset = ordered ? 3 : 2; // Approximate
+				const blockIndent = " ".repeat(offset);
+
+				const lines = childContent.split("\n");
+				childContent = `\n${lines.map((line) => blockIndent + line).join("\n")}`;
+			}
+
+			content += childContent;
 		}
 	}
 
-    // Ensure space after marker if content is text
-    // If content starts with newline (block), it's fine.
+	// Ensure space after marker if content is text
+	// If content starts with newline (block), it's fine.
 	let result = `${baseIndent}${marker} ${prefix}${content}`;
-    
+
 	if (nestedLists.length > 0) {
-		result += "\n" + nestedLists.join("\n");
+		result += `\n${nestedLists.join("\n")}`;
 	}
 
 	return result;
@@ -168,8 +166,9 @@ function serializeListItem(
 function serializeTable(element: Element): string {
 	const rows = element.children as Element[];
 	if (!rows || rows.length === 0) return "";
-    
-    const alignments = (element as any).align as string[] || [];
+
+	// biome-ignore lint/suspicious/noExplicitAny: Accessing align property dynamically from enrichment
+	const alignments = ((element as any).align as string[]) || [];
 
 	const lines: string[] = [];
 
@@ -183,12 +182,14 @@ function serializeTable(element: Element): string {
 
 		// Add separator after header row
 		if (i === 0) {
-			const separator = cells.map((_, index) => {
-                const align = alignments[index];
-                if (align === 'center') return ':---:';
-                if (align === 'right') return '---:';
-                return '---'; // Default or left
-            }).join(" | ");
+			const separator = cells
+				.map((_, index) => {
+					const align = alignments[index];
+					if (align === "center") return ":---:";
+					if (align === "right") return "---:";
+					return "---"; // Default or left
+				})
+				.join(" | ");
 			lines.push(`| ${separator} |`);
 		}
 	}
@@ -205,10 +206,10 @@ function serializeText(node: Text): string {
 
 	// Escape special characters if not part of a mark
 	if (!node.bold && !node.italic && !node.code) {
-        // Escape * and _ and [ and ]
-        // Careful not to break existing things, but here we are conservative
-        text = text.replace(/([*_\[\]])/g, '\\$1');
-    }
+		// Escape * and _ and [ and ]
+		// Careful not to break existing things, but here we are conservative
+		text = text.replace(/([*_[\]])/g, "\\$1");
+	}
 
 	// Handle marks
 	if ("bold" in node && node.bold) {
