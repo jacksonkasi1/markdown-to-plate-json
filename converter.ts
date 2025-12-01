@@ -3,18 +3,12 @@ import type { Descendant } from "slate";
 
 // ** import core packages
 import { createSlateEditor } from "@udecode/plate-core";
-import { BaseListPlugin } from "@platejs/list";
-import {
-	buildRules,
-	defaultRules,
-	deserializeMd,
-	MarkdownPlugin,
-	serializeMd,
-} from "@platejs/markdown";
+import { deserializeMd, MarkdownPlugin } from "@platejs/markdown";
 import remarkGfm from "remark-gfm";
 
 // ** import utils
 import { readFile, writeFile } from "node:fs/promises";
+import { serializeToMarkdown } from "./custom-serializer";
 
 /**
  * Converts Markdown to Plate JSON format
@@ -22,9 +16,11 @@ import { readFile, writeFile } from "node:fs/promises";
 export async function convertMarkdownToPlateJSON(
 	markdownContent: string,
 ): Promise<Descendant[]> {
-	// Create a Plate editor with ListPlugin and MarkdownPlugin
+	// Create a Plate editor with only MarkdownPlugin
+	// Note: We don't use BaseListPlugin here because it converts lists to indent-based format
+	// which doesn't serialize back to markdown. The MarkdownPlugin alone handles traditional ul/ol/li structure.
 	const editor = createSlateEditor({
-		plugins: [BaseListPlugin, MarkdownPlugin],
+		plugins: [MarkdownPlugin],
 	});
 
 	// Deserialize markdown to Plate JSON
@@ -40,24 +36,8 @@ export async function convertMarkdownToPlateJSON(
  * Converts Plate JSON to Markdown format
  */
 export function convertPlateJSONToMarkdown(plateJSON: Descendant[]): string {
-	// Create a Plate editor with ListPlugin and MarkdownPlugin
-	const editor = createSlateEditor({
-		plugins: [BaseListPlugin, MarkdownPlugin],
-	});
-
-	// Build rules for the editor (includes list serialization rules)
-	// biome-ignore lint/suspicious/noExplicitAny: Type compatibility issue with editor type
-	const rules = buildRules(editor as any);
-
-	// Serialize Plate JSON to Markdown with rules and value
-	// biome-ignore lint/suspicious/noExplicitAny: Type compatibility issue between plate-core and platejs/markdown
-	const markdown = serializeMd(editor as any, {
-		remarkPlugins: [remarkGfm],
-		rules: { ...defaultRules, ...rules },
-		// biome-ignore lint/suspicious/noExplicitAny: Type compatibility with plateJSON
-		value: plateJSON as any,
-	});
-
+	// Use custom serializer that properly handles lists and all markdown elements
+	const markdown = serializeToMarkdown(plateJSON);
 	return markdown;
 }
 

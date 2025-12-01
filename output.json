@@ -55,74 +55,97 @@
 	{
 		"children": [
 			{
-				"bold": true,
-				"text": "Bold text"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
-			{
-				"italic": true,
-				"text": "Italic text"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
-			{
-				"italic": true,
-				"bold": true,
-				"text": "Bold and italic"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
-			{
-				"strikethrough": true,
-				"text": "Strikethrough"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
-			{
-				"code": true,
-				"text": "inline code"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
+				"children": [
+					{
+						"children": [
+							{
+								"bold": true,
+								"text": "Bold text"
+							}
+						],
+						"type": "lic"
+					}
+				],
+				"type": "li"
+			},
 			{
 				"children": [
 					{
-						"text": "Link to Google"
+						"children": [
+							{
+								"italic": true,
+								"text": "Italic text"
+							}
+						],
+						"type": "lic"
 					}
 				],
-				"type": "a",
-				"url": "https://google.com"
+				"type": "li"
+			},
+			{
+				"children": [
+					{
+						"children": [
+							{
+								"italic": true,
+								"bold": true,
+								"text": "Bold and italic"
+							}
+						],
+						"type": "lic"
+					}
+				],
+				"type": "li"
+			},
+			{
+				"children": [
+					{
+						"children": [
+							{
+								"strikethrough": true,
+								"text": "Strikethrough"
+							}
+						],
+						"type": "lic"
+					}
+				],
+				"type": "li"
+			},
+			{
+				"children": [
+					{
+						"children": [
+							{
+								"code": true,
+								"text": "inline code"
+							}
+						],
+						"type": "lic"
+					}
+				],
+				"type": "li"
+			},
+			{
+				"children": [
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"text": "Link to Google"
+									}
+								],
+								"type": "a",
+								"url": "https://google.com"
+							}
+						],
+						"type": "lic"
+					}
+				],
+				"type": "li"
 			}
 		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "disc"
+		"type": "ul"
 	},
 	{
 		"children": [
@@ -183,62 +206,95 @@
 	{
 		"children": [
 			{
-				"text": "First item"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
+				"children": [
+					{
+						"children": [
+							{
+								"text": "First item"
+							}
+						],
+						"type": "lic"
+					}
+				],
+				"type": "li"
+			},
 			{
-				"text": "Second item"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
+				"children": [
+					{
+						"children": [
+							{
+								"text": "Second item"
+							}
+						],
+						"type": "lic"
+					},
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"children": [
+											{
+												"text": "Nested item 1"
+											}
+										],
+										"type": "lic"
+									}
+								],
+								"type": "li"
+							},
+							{
+								"children": [
+									{
+										"children": [
+											{
+												"text": "Nested item 2"
+											}
+										],
+										"type": "lic"
+									},
+									{
+										"children": [
+											{
+												"children": [
+													{
+														"children": [
+															{
+																"text": "Deep nested item"
+															}
+														],
+														"type": "lic"
+													}
+												],
+												"type": "li"
+											}
+										],
+										"type": "ul"
+									}
+								],
+								"type": "li"
+							}
+						],
+						"type": "ul"
+					}
+				],
+				"type": "li"
+			},
 			{
-				"text": "Nested item 1"
+				"children": [
+					{
+						"children": [
+							{
+								"text": "Third item"
+							}
+						],
+						"type": "lic"
+					}
+				],
+				"type": "li"
 			}
 		],
-		"type": "p",
-		"indent": 2,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
-			{
-				"text": "Nested item 2"
-			}
-		],
-		"type": "p",
-		"indent": 2,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
-			{
-				"text": "Deep nested item"
-			}
-		],
-		"type": "p",
-		"indent": 3,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
-			{
-				"text": "Third item"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "disc"
+		"type": "ul"
 	},
 	{
 		"children": [
@@ -251,57 +307,77 @@
 	{
 		"children": [
 			{
-				"text": "First step"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "decimal",
-		"listStart": 1
-	},
-	{
-		"children": [
+				"children": [
+					{
+						"children": [
+							{
+								"text": "First step"
+							}
+						],
+						"type": "lic"
+					}
+				],
+				"type": "li"
+			},
 			{
-				"text": "Second step"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "decimal",
-		"listStart": 2
-	},
-	{
-		"children": [
+				"children": [
+					{
+						"children": [
+							{
+								"text": "Second step"
+							}
+						],
+						"type": "lic"
+					},
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"children": [
+											{
+												"text": "Sub-step A"
+											}
+										],
+										"type": "lic"
+									}
+								],
+								"type": "li"
+							},
+							{
+								"children": [
+									{
+										"children": [
+											{
+												"text": "Sub-step B"
+											}
+										],
+										"type": "lic"
+									}
+								],
+								"type": "li"
+							}
+						],
+						"type": "ol"
+					}
+				],
+				"type": "li"
+			},
 			{
-				"text": "Sub-step A"
+				"children": [
+					{
+						"children": [
+							{
+								"text": "Third step"
+							}
+						],
+						"type": "lic"
+					}
+				],
+				"type": "li"
 			}
 		],
-		"type": "p",
-		"indent": 2,
-		"listStyleType": "decimal",
-		"listStart": 1
-	},
-	{
-		"children": [
-			{
-				"text": "Sub-step B"
-			}
-		],
-		"type": "p",
-		"indent": 2,
-		"listStyleType": "decimal",
-		"listStart": 2
-	},
-	{
-		"children": [
-			{
-				"text": "Third step"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "decimal",
-		"listStart": 3
+		"type": "ol"
 	},
 	{
 		"children": [
@@ -314,57 +390,77 @@
 	{
 		"children": [
 			{
-				"text": "Completed task"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "todo",
-		"checked": true
-	},
-	{
-		"children": [
+				"children": [
+					{
+						"children": [
+							{
+								"text": "Completed task"
+							}
+						],
+						"type": "lic"
+					}
+				],
+				"type": "li"
+			},
 			{
-				"text": "Pending task"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "todo",
-		"checked": false
-	},
-	{
-		"children": [
+				"children": [
+					{
+						"children": [
+							{
+								"text": "Pending task"
+							}
+						],
+						"type": "lic"
+					}
+				],
+				"type": "li"
+			},
 			{
-				"text": "Another pending task"
+				"children": [
+					{
+						"children": [
+							{
+								"text": "Another pending task"
+							}
+						],
+						"type": "lic"
+					},
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"children": [
+											{
+												"text": "Nested completed task"
+											}
+										],
+										"type": "lic"
+									}
+								],
+								"type": "li"
+							},
+							{
+								"children": [
+									{
+										"children": [
+											{
+												"text": "Nested pending task"
+											}
+										],
+										"type": "lic"
+									}
+								],
+								"type": "li"
+							}
+						],
+						"type": "ul"
+					}
+				],
+				"type": "li"
 			}
 		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "todo",
-		"checked": false
-	},
-	{
-		"children": [
-			{
-				"text": "Nested completed task"
-			}
-		],
-		"type": "p",
-		"indent": 2,
-		"listStyleType": "todo",
-		"checked": true
-	},
-	{
-		"children": [
-			{
-				"text": "Nested pending task"
-			}
-		],
-		"type": "p",
-		"indent": 2,
-		"listStyleType": "todo",
-		"checked": false
+		"type": "ul"
 	},
 	{
 		"children": [
@@ -1252,108 +1348,131 @@
 	{
 		"children": [
 			{
-				"text": "First level ordered list"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "decimal",
-		"listStart": 1
-	},
-	{
-		"children": [
-			{
-				"text": "Unordered nested item"
-			}
-		],
-		"type": "p",
-		"indent": 2,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
-			{
-				"text": "Another item with "
+				"children": [
+					{
+						"children": [
+							{
+								"text": "First level ordered list"
+							}
+						],
+						"type": "lic"
+					},
+					{
+						"children": [
+							{
+								"children": [
+									{
+										"children": [
+											{
+												"text": "Unordered nested item"
+											}
+										],
+										"type": "lic"
+									}
+								],
+								"type": "li"
+							},
+							{
+								"children": [
+									{
+										"children": [
+											{
+												"text": "Another item with "
+											},
+											{
+												"bold": true,
+												"text": "bold"
+											},
+											{
+												"text": " and "
+											},
+											{
+												"italic": true,
+												"text": "italic"
+											}
+										],
+										"type": "lic"
+									},
+									{
+										"children": [
+											{
+												"children": [
+													{
+														"text": "// Nested code block"
+													}
+												],
+												"type": "code_line"
+											},
+											{
+												"children": [
+													{
+														"text": "const nested = true;"
+													}
+												],
+												"type": "code_line"
+											}
+										],
+										"lang": "javascript",
+										"type": "code_block"
+									}
+								],
+								"type": "li"
+							},
+							{
+								"children": [
+									{
+										"children": [
+											{
+												"text": "Back to list"
+											}
+										],
+										"type": "lic"
+									}
+								],
+								"type": "li"
+							}
+						],
+						"type": "ul"
+					}
+				],
+				"type": "li"
 			},
-			{
-				"bold": true,
-				"text": "bold"
-			},
-			{
-				"text": " and "
-			},
-			{
-				"italic": true,
-				"text": "italic"
-			}
-		],
-		"type": "p",
-		"indent": 2,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
 			{
 				"children": [
 					{
-						"text": "// Nested code block"
+						"children": [
+							{
+								"text": "Second level"
+							}
+						],
+						"type": "lic"
+					},
+					{
+						"children": [
+							{
+								"text": "Nested blockquote\nwith multiple lines"
+							}
+						],
+						"type": "blockquote"
 					}
 				],
-				"type": "code_line"
+				"type": "li"
 			},
 			{
 				"children": [
 					{
-						"text": "const nested = true;"
+						"children": [
+							{
+								"text": "Third level"
+							}
+						],
+						"type": "lic"
 					}
 				],
-				"type": "code_line"
+				"type": "li"
 			}
 		],
-		"lang": "javascript",
-		"type": "code_block",
-		"indent": 3
-	},
-	{
-		"children": [
-			{
-				"text": "Back to list"
-			}
-		],
-		"type": "p",
-		"indent": 2,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
-			{
-				"text": "Second level"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "decimal",
-		"listStart": 2
-	},
-	{
-		"children": [
-			{
-				"text": "Nested blockquote\nwith multiple lines"
-			}
-		],
-		"type": "blockquote",
-		"indent": 2
-	},
-	{
-		"children": [
-			{
-				"text": "Third level"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "decimal",
-		"listStart": 3
+		"type": "ol"
 	},
 	{
 		"children": [
@@ -1374,112 +1493,150 @@
 	{
 		"children": [
 			{
-				"text": "Text formatting (bold, italic, strikethrough)"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
+				"children": [
+					{
+						"children": [
+							{
+								"text": "Text formatting (bold, italic, strikethrough)"
+							}
+						],
+						"type": "lic"
+					}
+				],
+				"type": "li"
+			},
 			{
-				"text": "Headers at all levels"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
+				"children": [
+					{
+						"children": [
+							{
+								"text": "Headers at all levels"
+							}
+						],
+						"type": "lic"
+					}
+				],
+				"type": "li"
+			},
 			{
-				"text": "Multiple list types"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
+				"children": [
+					{
+						"children": [
+							{
+								"text": "Multiple list types"
+							}
+						],
+						"type": "lic"
+					}
+				],
+				"type": "li"
+			},
 			{
-				"text": "Code blocks with syntax highlighting"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
+				"children": [
+					{
+						"children": [
+							{
+								"text": "Code blocks with syntax highlighting"
+							}
+						],
+						"type": "lic"
+					}
+				],
+				"type": "li"
+			},
 			{
-				"text": "Blockquotes (including nested)"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
+				"children": [
+					{
+						"children": [
+							{
+								"text": "Blockquotes (including nested)"
+							}
+						],
+						"type": "lic"
+					}
+				],
+				"type": "li"
+			},
 			{
-				"text": "Tables with different alignments"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
+				"children": [
+					{
+						"children": [
+							{
+								"text": "Tables with different alignments"
+							}
+						],
+						"type": "lic"
+					}
+				],
+				"type": "li"
+			},
 			{
-				"text": "Images"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
+				"children": [
+					{
+						"children": [
+							{
+								"text": "Images"
+							}
+						],
+						"type": "lic"
+					}
+				],
+				"type": "li"
+			},
 			{
-				"text": "Links (inline and reference)"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
+				"children": [
+					{
+						"children": [
+							{
+								"text": "Links (inline and reference)"
+							}
+						],
+						"type": "lic"
+					}
+				],
+				"type": "li"
+			},
 			{
-				"text": "Horizontal rules"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
+				"children": [
+					{
+						"children": [
+							{
+								"text": "Horizontal rules"
+							}
+						],
+						"type": "lic"
+					}
+				],
+				"type": "li"
+			},
 			{
-				"text": "Mixed content"
-			}
-		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "disc"
-	},
-	{
-		"children": [
+				"children": [
+					{
+						"children": [
+							{
+								"text": "Mixed content"
+							}
+						],
+						"type": "lic"
+					}
+				],
+				"type": "li"
+			},
 			{
-				"text": "Special characters"
+				"children": [
+					{
+						"children": [
+							{
+								"text": "Special characters"
+							}
+						],
+						"type": "lic"
+					}
+				],
+				"type": "li"
 			}
 		],
-		"type": "p",
-		"indent": 1,
-		"listStyleType": "disc"
+		"type": "ul"
 	},
 	{
 		"children": [
